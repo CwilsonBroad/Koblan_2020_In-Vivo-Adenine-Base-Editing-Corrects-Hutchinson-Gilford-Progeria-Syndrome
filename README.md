@@ -10,12 +10,18 @@ Scripts are designed for used on the Cannon High Performance Computing Cluster a
 
 https://github.com/BioinfoUNIBA/REDItools
 
-## A to I quantification R 
+## A to I quantification in R 
 
-### Percent Editing
+### Percent A to I 
 
-### Site Based Editing
+### A to I sites 
 
 # Differential Expression
+
+## Counting
+
+## Limma-Voom
+
+## Visualization
 
 
