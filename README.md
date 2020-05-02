@@ -12,6 +12,15 @@ Trimmomatic.sh
 
 ## Perform 2-Pass STAR alignment to Genome
 
+### Requirements 
+
+STAR - https://github.com/alexdobin/STAR
+STAR indexed reference genome
+
+Align reads to indexed reference genome using STAR:
+
+STAR1stPASS.sh
+
 # A to I quantification
 
 ## REDItools
