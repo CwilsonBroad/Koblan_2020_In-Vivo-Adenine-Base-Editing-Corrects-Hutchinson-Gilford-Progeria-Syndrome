@@ -6,15 +6,15 @@ Scripts are designed for used on the Cannon High Performance Computing Cluster a
 
 ## Trim reads:
 
-### Requirements
+### Requirements:
 
 Trimmomatic - http://www.usadellab.org/cms/?page=trimmomatic
 
 run Trimmomatic.sh
 
-## Perform 2-Pass STAR alignment to Genome
+## Perform 2-Pass STAR alignment to genome:
 
-### Requirements 
+### Requirements: 
 
 STAR - https://github.com/alexdobin/STAR
 
