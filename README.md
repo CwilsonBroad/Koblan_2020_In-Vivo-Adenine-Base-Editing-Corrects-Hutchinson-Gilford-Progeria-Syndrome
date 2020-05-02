@@ -10,6 +10,8 @@ http://www.usadellab.org/cms/?page=trimmomatic
 
 Trimmomatic.sh
 
+## Perform 2-Pass STAR alignment to Genome
+
 # A to I quantification
 
 ## REDItools
