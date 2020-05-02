@@ -8,7 +8,7 @@ Scripts are designed for used on the Cannon High Performance Computing Cluster a
 
 http://www.usadellab.org/cms/?page=trimmomatic
 
-Trimmomatic.sh
+run Trimmomatic.sh
 
 ## Perform 2-Pass STAR alignment to Genome
 
@@ -19,7 +19,7 @@ STAR indexed reference genome
 
 Align reads to indexed reference genome using STAR:
 
-STAR1stPASS.sh
+run STAR1stPASS.sh
 
 # A to I quantification
 
