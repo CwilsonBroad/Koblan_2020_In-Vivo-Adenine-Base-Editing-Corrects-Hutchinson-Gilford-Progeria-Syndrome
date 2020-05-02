@@ -18,7 +18,7 @@ run Trimmomatic.sh
 
 STAR - https://github.com/alexdobin/STAR
 
-Reference genome - Example hg38 from Ensemble (
+Reference genome - Ensemble (https://useast.ensembl.org/info/data/ftp/index.html)
 
 ### Align reads to indexed reference genome using STAR:
 
