@@ -4,9 +4,11 @@ Scripts used in In Vivo Adenine Base Editing Corrects Hutchinson-Gilford Progeri
 # Preprocessing and Alignment 
 Scripts are designed for used on the Cannon High Performance Computing Cluster at Harvard (SLURM scheduler).
 
-## Trim reads with Trimmomatic:
+## Trim reads:
 
-http://www.usadellab.org/cms/?page=trimmomatic
+### Requirements
+
+Trimmomatic - http://www.usadellab.org/cms/?page=trimmomatic
 
 run Trimmomatic.sh
 
@@ -16,7 +18,7 @@ run Trimmomatic.sh
 
 STAR - https://github.com/alexdobin/STAR
 
-STAR indexed reference genome
+Reference genome - Example hg38 from Ensemble (
 
 ### Align reads to indexed reference genome using STAR:
 
