@@ -15,9 +15,10 @@ run Trimmomatic.sh
 ### Requirements 
 
 STAR - https://github.com/alexdobin/STAR
+
 STAR indexed reference genome
 
-Align reads to indexed reference genome using STAR:
+### Align reads to indexed reference genome using STAR:
 
 run STAR1stPASS.sh
 
