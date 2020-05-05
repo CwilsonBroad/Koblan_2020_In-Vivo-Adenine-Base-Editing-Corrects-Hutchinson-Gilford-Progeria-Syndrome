@@ -20,7 +20,11 @@ STAR - https://github.com/alexdobin/STAR
 
 Reference genome - Ensemble (https://useast.ensembl.org/info/data/ftp/index.html)
 
+Reference gtf file - Ensemble (https://useast.ensembl.org/info/data/ftp/index.html)
+
 ### Index genome with STAR: 
+
+run 
 
 ### Align reads to indexed reference genome using STAR:
 
