@@ -32,7 +32,9 @@ run STAR1stPASS.sh
 
 ### Align reads again using the splice table from the first STAR run: 
 
+- The 1st pass of STAR will generate a table of splice sites. We will rerun star using the splice table generated during the first STAR run. 
 
+run STAR2ndPass.sh 
 
 # A to I quantification
 
