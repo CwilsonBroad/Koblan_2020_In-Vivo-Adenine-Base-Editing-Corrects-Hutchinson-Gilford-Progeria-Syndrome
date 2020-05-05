@@ -24,7 +24,7 @@ Reference gtf file - Ensemble (https://useast.ensembl.org/info/data/ftp/index.ht
 
 ### Index genome with STAR: 
 
-run 
+run STARindex.sh
 
 ### Align reads to indexed reference genome using STAR:
 
