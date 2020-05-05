@@ -30,6 +30,10 @@ run STARindex.sh
 
 run STAR1stPASS.sh
 
+### Align reads again using the splice table from the first STAR run: 
+
+
+
 # A to I quantification
 
 ## REDItools
