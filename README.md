@@ -44,7 +44,11 @@ run SortIndex.sh
 
 ## REDItools
 
-https://github.com/BioinfoUNIBA/REDItools
+### Requirements:
+
+REDItools - https://github.com/BioinfoUNIBA/REDItools
+
+run REDItools.sh
 
 ## A to I quantification in R 
 
