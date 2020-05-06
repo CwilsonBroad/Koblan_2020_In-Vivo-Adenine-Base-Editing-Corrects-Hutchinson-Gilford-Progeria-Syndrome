@@ -36,6 +36,10 @@ run STAR1stPASS.sh
 
 run STAR2ndPass.sh 
 
+### Convert SAMs to BAMs, Sort and Index: 
+
+run SortIndex.sh 
+
 # A to I quantification
 
 ## REDItools
