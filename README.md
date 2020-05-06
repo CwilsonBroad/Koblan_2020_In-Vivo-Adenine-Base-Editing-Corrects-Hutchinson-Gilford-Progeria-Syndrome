@@ -48,6 +48,8 @@ run SortIndex.sh
 
 REDItools - https://github.com/BioinfoUNIBA/REDItools
 
+### Generate mutation tables with REDItools
+
 run REDItools.sh
 
 ## A to I quantification in R 
