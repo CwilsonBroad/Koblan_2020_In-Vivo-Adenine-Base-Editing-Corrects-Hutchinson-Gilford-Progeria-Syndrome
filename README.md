@@ -60,7 +60,7 @@ R - https://cran.r-project.org/
 
 ### Percent A to I 
 
-run AtoI.R 
+run AtoIPercent.R 
 
 ### A to I sites 
 
