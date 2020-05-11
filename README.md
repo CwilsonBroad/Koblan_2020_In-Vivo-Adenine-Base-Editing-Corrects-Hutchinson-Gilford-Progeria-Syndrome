@@ -36,7 +36,7 @@ run STAR1stPASS.sh
 
 run STAR2ndPass.sh 
 
-### Convert SAMs to BAMs, Sort and Index: 
+### Convert SAMs to BAMs, sort and index: 
 
 run SortIndex.sh 
 
