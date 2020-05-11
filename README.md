@@ -54,7 +54,13 @@ run REDItools.sh
 
 ## A to I quantification in R 
 
+### Requirements:
+
+R - https://cran.r-project.org/
+
 ### Percent A to I 
+
+run AtoI.R 
 
 ### A to I sites 
 
