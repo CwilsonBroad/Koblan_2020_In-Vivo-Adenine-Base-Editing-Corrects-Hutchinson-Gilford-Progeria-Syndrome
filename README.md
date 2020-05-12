@@ -64,6 +64,8 @@ run AtoIPercent.R
 
 ### A to I sites 
 
+run AtoIEditing.R
+
 # Differential Expression
 
 ## Counting
