@@ -1,12 +1,14 @@
-library(tidyverse)
 library(readr)
+library(tidyverse)
+library(ggplot2)
+library(IdeoViz)
 
-E1_A_filtered <- read_csv("E1_A_edited.txt", col_names = FALSE)
-E1_A <- read_delim("E1_A.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+sample_1_AG <- read_delim("sample_1_AG.txt", "\t", escape_double = FALSE, trim_ws = TRUE, col_names = FALSE)
+sample_1_AG <- dplyr::filter(sample_1_AG, sample_1_AG$X9 < .90 )
+mean_sample_1 <- mean(sample_1_AG$X9)
 
-E1_AllA <- sum(E1_A$X5)
-E1_Gs <- sum(E1_A_edited$X3)
-E1_percentEdited <- E1_Gs/E1_AllA
-E1_AllA
-E1_Gs
-E1_percentEdited
+myList <- c(mean_sample_1, mean_sample_2)
+myListnames <- c("sample_1","sample_2")
+
+means <- as.data.frame(myList, row.names = myListnames)
+boxplot(means$myList)
