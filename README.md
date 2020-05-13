@@ -4,7 +4,7 @@ Scripts used in In Vivo Adenine Base Editing Corrects Hutchinson-Gilford Progeri
 # Preprocessing and Alignment 
 Scripts are designed for used on the Cannon High Performance Computing Cluster at Harvard (SLURM scheduler).
 
-## Trim reads:
+## Trim reads
 
 ### Requirements:
 
@@ -12,7 +12,7 @@ Trimmomatic - http://www.usadellab.org/cms/?page=trimmomatic
 
 run Trimmomatic.sh
 
-## Perform 2-Pass STAR alignment to genome:
+## Perform 2-Pass STAR alignment to genome
 
 ### Requirements: 
 
@@ -52,7 +52,7 @@ REDItools - https://github.com/BioinfoUNIBA/REDItools
 
 run REDItools.sh
 
-## A to I quantification in R: 
+## A to I quantification in R 
 
 ### Requirements:
 
@@ -68,7 +68,7 @@ run AtoIEditing.R
 
 # Differential Expression
 
-## Transcript counting with RSEM:
+## Transcript counting with RSEM
 
 ### Requirements:
 
@@ -78,7 +78,7 @@ run AtoIEditing.R
 
 run rsem.sh
 
-## Limma-Voom + Visualization:
+## Limma-Voom + Visualization
 
 run Limma-Voom.R
 
