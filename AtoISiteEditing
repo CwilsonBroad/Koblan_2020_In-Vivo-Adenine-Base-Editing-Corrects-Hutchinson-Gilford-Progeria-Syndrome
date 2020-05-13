@@ -1,0 +1,376 @@
+library(VennDiagram)
+library(tidyverse)
+
+setwd("/Volumes/Extreme/Luke_Progeria/Reditools/Reditools_Take2/List/Edited")
+
+VEP_1 <- read_delim("1_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("2_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("3_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = 'Untreated_167.png',
+  output=TRUE,
+  imagetype="png" ,
+  height = 1100 , 
+  width = 1100 , 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "167_Untreated_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "167_Untreated_all.csv")
+
+##--------------------------------------------------##
+
+
+VEP_1 <- read_delim("4_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("5_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("6_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = '10day_167.png',
+  output=TRUE,
+  imagetype="png" ,
+  height = 1100 , 
+  width = 1100 , 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "167_10Day_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "167_10Day_all.csv")
+
+##--------------------------------------------------##
+
+
+VEP_1 <- read_delim("7_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("8_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("9_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = '20day_167.png',
+  output=TRUE,
+  imagetype="png" ,
+  height = 1100 , 
+  width = 1100 , 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "167_20Day_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "167_20Day_all.csv")
+
+##--------------------------------------------------##
+
+
+VEP_1 <- read_delim("10_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("11_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("12_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = 'Untreated_188.png',
+  output=TRUE,
+  imagetype="png",
+  height = 1100, 
+  width = 1100, 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "188_Untreated_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "188_Untreated_all.csv")
+
+##--------------------------------------------------##
+
+VEP_1 <- read_delim("13_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("14_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("15_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = '10day_188.png',
+  output=TRUE,
+  imagetype="png",
+  height = 1100, 
+  width = 1100, 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "188_10day_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "188_10day_all.csv")
+
+##--------------------------------------------------##
+
+VEP_1 <- read_delim("16_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("17_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("18_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = '20day_188.png',
+  output=TRUE,
+  imagetype="png" ,
+  height = 1100 , 
+  width = 1100 , 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "188_20day_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "188_20day_all.csv")
+
+##--------------------------------------------------##
+
+VEP_1 <- read_delim("19_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_2 <- read_delim("20_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+VEP_3 <- read_delim("21_VEP.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE) 
+
+#Create Venn Diagram:
+Chrom_list_1 <- VEP_1$X2
+Chrom_list_2 <- VEP_2$X2
+Chrom_list_3 <- VEP_3$X2
+
+venn.diagram(
+  x = list(Chrom_list_1, Chrom_list_2, Chrom_list_3),
+  category.names = c("Rep_1" , "Rep_2 " , "Rep_3"),
+  filename = 'Parent_186.png',
+  output=TRUE
+  imagetype="png" ,
+  height = 1100 , 
+  width = 1100 , 
+  resolution = 1000,
+  compression = "lzw",
+  lwd = 1,
+  col=c("#440154ff", '#21908dff', '#fde725ff'),
+  fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3), alpha('#fde725ff',0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#440154ff", '#21908dff', '#fde725ff'),
+  rotation = 1
+)
+
+#Combine data sets on common:
+Intersect_1 <- intersect(VEP_1, VEP_2)
+Intersect_2 <- intersect(VEP_3, Intersect_1)
+Intersect_3 <- intersect(VEP_2, VEP_3)
+Intersect_4 <- intersect(VEP_1, VEP_3)
+
+#Combine the sets:
+Union1 <- union(VEP_1, VEP_2)
+Union2 <- union(Union1, VEP_3)
+Union3 <- union(Intersect_1, Intersect_3)
+Union4 <- union(Union3, Intersect_4)
+
+#In any two replicates: 
+write_csv(Union4, path = "Parent_186_2rep.csv")
+
+#All edits:
+write_csv(Union3, path = "Parent_186_all.csv")
