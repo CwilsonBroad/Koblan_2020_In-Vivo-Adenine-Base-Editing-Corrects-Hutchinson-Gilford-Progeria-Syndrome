@@ -40,7 +40,7 @@ run STAR2ndPass.sh
 
 run SortIndex.sh 
 
-# A to I quantification
+# A to I quantification:
 
 ## REDItools
 
@@ -48,29 +48,37 @@ run SortIndex.sh
 
 REDItools - https://github.com/BioinfoUNIBA/REDItools
 
-### Generate mutation tables with REDItools
+### Generate mutation tables with REDItools:
 
 run REDItools.sh
 
-## A to I quantification in R 
+## A to I quantification in R: 
 
 ### Requirements:
 
 R - https://cran.r-project.org/
 
-### Percent A to I 
+### Percent A to I: 
 
 run AtoIPercent.R 
 
-### A to I sites 
+### A to I sites: 
 
 run AtoIEditing.R
 
 # Differential Expression
 
-## Counting
+## Transcript coutnting with RSEM
 
-## Limma-Voom + Visualization
+### Requirements:
+
+### Index genome for use with RSEM:
+
+### Run RSEM transcript quanitification:
+
+run rsem.sh
+
+## Limma-Voom + Visualization:
 
 run Limma-Voom.R
 
