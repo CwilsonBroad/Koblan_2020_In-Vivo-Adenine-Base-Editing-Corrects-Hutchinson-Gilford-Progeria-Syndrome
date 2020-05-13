@@ -68,7 +68,7 @@ run AtoIEditing.R
 
 # Differential Expression
 
-## Transcript coutnting with RSEM
+## Transcript counting with RSEM:
 
 ### Requirements:
 
