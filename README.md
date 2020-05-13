@@ -70,8 +70,6 @@ run AtoIEditing.R
 
 ## Counting
 
-## Limma-Voom
-
-## Visualization
+## Limma-Voom + Visualization
 
 
