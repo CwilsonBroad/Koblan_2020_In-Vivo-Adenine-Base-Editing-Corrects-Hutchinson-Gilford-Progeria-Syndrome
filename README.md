@@ -72,7 +72,13 @@ run AtoIEditing.R
 
 ### Requirements:
 
+RSEM - https://github.com/deweylab/RSEM
+
+R - https://cran.r-project.org/
+
 ### Index genome for use with RSEM:
+
+
 
 ### Run RSEM transcript quanitification:
 
