@@ -76,7 +76,7 @@ RSEM - https://github.com/deweylab/RSEM
 
 R - https://cran.r-project.org/
 
-### Index genome for use with RSEM:
+### Prepare the reference for use with RSEM:
 
 
 
