@@ -78,7 +78,7 @@ R - https://cran.r-project.org/
 
 ### Prepare the reference for use with RSEM:
 
-
+run rsemReference.sh
 
 ### Run RSEM transcript quanitification:
 
