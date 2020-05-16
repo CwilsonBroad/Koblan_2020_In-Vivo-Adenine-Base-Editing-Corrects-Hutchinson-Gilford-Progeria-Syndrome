@@ -86,6 +86,11 @@ run rsem.sh
 
 ## Limma-Voom + Visualization
 
+### Requirements:
+
+R - https://cran.r-project.org/
+
+### Differential expressiona and visualization: 
 run Limma-Voom.R
 
 
