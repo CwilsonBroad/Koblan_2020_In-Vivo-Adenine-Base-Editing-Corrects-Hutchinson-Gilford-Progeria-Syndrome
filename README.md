@@ -90,7 +90,7 @@ run rsem.sh
 
 R - https://cran.r-project.org/
 
-### Differential expressiona and visualization: 
+### Differential expression and visualization: 
 run Limma-Voom.R
 
 
