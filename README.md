@@ -93,4 +93,4 @@ R - https://cran.r-project.org/
 ### Differential expression and visualization: 
 run Limma-Voom.R
 
-
+## WGS
