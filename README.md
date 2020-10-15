@@ -94,3 +94,11 @@ R - https://cran.r-project.org/
 run Limma-Voom.R
 
 # WGS
+
+## Preprocessing
+
+## Alignment
+
+## ITR integration 
+
+## Polymorphism analysis
