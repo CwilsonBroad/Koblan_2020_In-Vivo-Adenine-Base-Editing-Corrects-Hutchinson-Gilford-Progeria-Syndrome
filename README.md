@@ -100,6 +100,7 @@ run Limma-Voom.R
 ## Alignment
 
 ## ITR integration 
+run ITR_Integration.sh
 
 ## Polymorphism analysis
 run SNP_Calling.sh
