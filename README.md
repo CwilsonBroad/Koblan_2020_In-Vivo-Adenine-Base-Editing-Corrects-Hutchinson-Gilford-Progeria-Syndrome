@@ -102,4 +102,4 @@ run Limma-Voom.R
 ## ITR integration 
 
 ## Polymorphism analysis
-run SNP_calling.sh
+run SNP_Calling.sh
