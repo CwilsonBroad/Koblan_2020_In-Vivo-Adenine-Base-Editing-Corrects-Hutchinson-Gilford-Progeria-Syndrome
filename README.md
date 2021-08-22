@@ -2,7 +2,7 @@
 Scripts used in In Vivo Adenine Base Editing Corrects Hutchinson-Gilford Progeria Syndrome. 
  
 # Preprocessing and Alignment 
-Scripts are designed for use on the Cannon High Performance Computing Cluster at Harvard (SLURM scheduler).  Easily adaptable by removing the SLURM commands at the start.
+Scripts are designed for use on the Cannon High Performance Computing Cluster at Harvard (SLURM scheduler).  Easily adaptable to your system by removing the SLURM commands at the top of the script.
 
 ## Trim reads
 
